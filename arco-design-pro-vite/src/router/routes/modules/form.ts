@@ -1,10 +1,9 @@
-import { DEFAULT_LAYOUT } from '../base';
 import { AppRouteRecordRaw } from '../types';
 
 const FORM: AppRouteRecordRaw = {
   path: '/form',
   name: 'form',
-  component: DEFAULT_LAYOUT,
+  redirect: '/form/step',
   meta: {
     locale: 'menu.form',
     icon: 'icon-settings',

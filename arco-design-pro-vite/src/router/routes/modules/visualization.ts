@@ -1,10 +1,9 @@
-import { DEFAULT_LAYOUT } from '../base';
 import { AppRouteRecordRaw } from '../types';
 
 const VISUALIZATION: AppRouteRecordRaw = {
   path: '/visualization',
   name: 'visualization',
-  component: DEFAULT_LAYOUT,
+  redirect: '/visualization/data-analysis',
   meta: {
     locale: 'menu.visualization',
     requiresAuth: true,

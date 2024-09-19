@@ -1,10 +1,9 @@
-import { DEFAULT_LAYOUT } from '../base';
 import { AppRouteRecordRaw } from '../types';
 
 const LIST: AppRouteRecordRaw = {
   path: '/list',
   name: 'list',
-  component: DEFAULT_LAYOUT,
+  redirect: '/list/search-table',
   meta: {
     locale: 'menu.list',
     requiresAuth: true,

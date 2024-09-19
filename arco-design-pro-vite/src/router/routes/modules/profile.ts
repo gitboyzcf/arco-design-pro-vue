@@ -1,10 +1,9 @@
-import { DEFAULT_LAYOUT } from '../base';
 import { AppRouteRecordRaw } from '../types';
 
 const PROFILE: AppRouteRecordRaw = {
   path: '/profile',
   name: 'profile',
-  component: DEFAULT_LAYOUT,
+  redirect: '/profile/basic',
   meta: {
     locale: 'menu.profile',
     requiresAuth: true,

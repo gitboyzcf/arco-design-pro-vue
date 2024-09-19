@@ -1,10 +1,9 @@
-import { DEFAULT_LAYOUT } from '../base';
 import { AppRouteRecordRaw } from '../types';
 
 const RESULT: AppRouteRecordRaw = {
   path: '/result',
   name: 'result',
-  component: DEFAULT_LAYOUT,
+  redirect: '/result/success',
   meta: {
     locale: 'menu.result',
     icon: 'icon-check-circle',

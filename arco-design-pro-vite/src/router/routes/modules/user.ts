@@ -1,10 +1,9 @@
-import { DEFAULT_LAYOUT } from '../base';
 import { AppRouteRecordRaw } from '../types';
 
 const USER: AppRouteRecordRaw = {
   path: '/user',
   name: 'user',
-  component: DEFAULT_LAYOUT,
+  redirect: '/user/info',
   meta: {
     locale: 'menu.user',
     icon: 'icon-user',

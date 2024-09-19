@@ -1,10 +1,9 @@
-import { DEFAULT_LAYOUT } from '../base';
 import { AppRouteRecordRaw } from '../types';
 
 const EXCEPTION: AppRouteRecordRaw = {
   path: '/exception',
   name: 'exception',
-  component: DEFAULT_LAYOUT,
+  redirect: '/exception/403',
   meta: {
     locale: 'menu.exception',
     requiresAuth: true,
